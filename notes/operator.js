@@ -1,9 +1,9 @@
-// 1. String concatenation
+// 1. 문자열 연결(String concatenation)
 console.log('my' + ' cat');
 console.log('1' + 2);
 console.log(`string literals : 1 + 2 = ${1 + 2}`);
 
-// 2. Numeric operators
+// 2. 사칙 연산(Numeric operators)
 console.log(1 + 1); // add
 console.log(1 - 1); // substract
 console.log(1 / 1); // divide
@@ -11,7 +11,7 @@ console.log(1 * 1); // multiply
 console.log(5 % 2); // remainder
 console.log(2 ** 3); // exponentiation
 
-// 3. Increment and decrement oprators
+// 3. 증감 연산자, 감소 연산자(Increment and decrement oprators)
 let counter = 2;
 const preIncrement = ++counter;
 // counter = counter + 1;
@@ -26,7 +26,7 @@ console.log(`preDecrement : ${preDecrement}, counter : ${counter}`);
 const postDecrement = counter--;
 console.log(`postDecrement : ${postDecrement}, counter : ${counter}`);
 
-// 4. Assignment operators
+// 4. 할당 연산자(Assignment operators)
 let x = 3;
 let y = 6;
 x += y; // x = x + y
@@ -34,13 +34,13 @@ x -= y; // x = x - y
 x *= y; // x = x * y
 x /= y; // x = x / y
 
-// 5. Comparison operators
+// 5. 비교 연산자(Comparison operators)
 console.log(10 < 6); // less than
 console.log(10 <= 6); // less than or equal
 console.log(10 > 6); // greater than
 console.log(10 >= 6); // greater than or equal
 
-// 6. Logical operators : || (or), && (and), ! (not)
+// 6. 논리 연산자(Logical operators) : || (or), && (and), ! (not)
 const value1 = true;
 const value2 = 4 < 2;
 
@@ -62,34 +62,36 @@ function check() {
 // ! (not)
 console.log(!value1);
 
-// 7. Equality
+// 7. 동등(Equality)
 const stringFive = '5';
 const numberFive = 5;
 
-// == loose equlity, with type conversion
-console.log(stringFive == numberFive);
-console.log(stringFive != numberFive);
+// == 느슨한 동등, with type conversion
+console.log(stringFive == numberFive); // true
+console.log(stringFive != numberFive); // false
 
-// === strict equlity, no type conversion
-console.log(stringFive === numberFive);
-console.log(stringFive !== numberFive);
+// === 엄격한 동등, no type conversion
+console.log(stringFive === numberFive); // false
+console.log(stringFive !== numberFive); // true
 
 // object equality by reference
 const user1 = { name: 'vi2920va' };
 const user2 = { name: 'vi2920va' };
 const user3 = user1;
-console.log(user1 == user2);
-console.log(user1 === user2);
-console.log(user1 === user3);
+console.log(user1 == user2); // false
+console.log(user1 === user2); // false
+console.log(user1 === user3); // true
 
 // equality - puzzler
-console.log(0 == false);
-console.log(0 === false);
-console.log('' == false);
-console.log('' === false);
-console.log(null == undefined);
-console.log(null === undefined);
+console.log(0 == false); // true
+console.log(0 === false); // false
+console.log('' == false); // false
+console.log('' === false); // false
+console.log(null == undefined); // true
+console.log(null === undefined); // false
 
+// 8.  조건문(Conditional ioperators) : if
+// if, else if, else
 const name = 'Java';
 if (name === 'JavaScript') {
   console.log('Welcome, JavaScript');
@@ -99,7 +101,7 @@ if (name === 'JavaScript') {
   console.log('unkwnon');
 }
 
-// Ternary operator : ?
+//  9. 조건 삼항 연산자(Ternary operator) : ?
 // codition ? value1 : value2;
 console.log(name === 'vi2920va' ? 'yes' : 'no');
 
@@ -121,7 +123,7 @@ switch (browser) {
     break;
 }
 
-// 11. Loops
+// 11. 반복문(Loops)
 // while loop, while the condition is truthy,
 // body code is executed.
 let i = 3;
