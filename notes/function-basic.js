@@ -22,6 +22,11 @@ function add(a, b) {
 function avg(a, b) {
   return a / b;
 }
+function surprise(operator) {
+  const result = operator(55, 10); // add(55, 10)
+  console.log(result);
+}
+
 // 2. 함수 호출(Function calling)
 // 함수의 호출 방법은 함수 이름 옆에 괄호를 써서 함수 선언에서 정의한 매개변수를 인자로 전달해서 함수를 실행한다. ex) myfun()
 // 함수는 다른 변수에 할당할 수 있고, 다른 함수의 인자로 전달할 수 있는데 이 경우에는 함수를 실행하지 않고, 함수 이름만 전달해야 한다. ex) doSometing(avg)
@@ -37,6 +42,7 @@ console.log(result);
 // 4. 함수를 인자로 전달
 // 함수를 전달할 때에는 함수 이름만 전달한다.
 doSomething(avg);
+surprise(add);
 
 // 5. 함수를 변수에 할당
 const avgFun = avg;
