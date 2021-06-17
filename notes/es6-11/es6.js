@@ -88,7 +88,7 @@
   const fruits = [...fruits1, ...fruits2];
   console.log(fruits); // ["🍑", "🍓", "🍌", "🥝"]
 
-  // 객체 병합(object merge)
+  // 객체 병합(object merge)default message
   const dog1 = { dog: '🐕' };
   const dog2 = { dog: '🐶' };
   const dog = { ...dog1, ...dog2 };
