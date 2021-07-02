@@ -16,7 +16,7 @@ console.log(user);
 // await 키워드는 async 함수 안에서만 동작한다.
 // JavaScript에서 await 키워드를 만나면 promise가 처리 될 때 까지 기다리고 결과는 그 이후에 반환한다.
 function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function getApple() {
@@ -43,7 +43,7 @@ pickFuits().then(console.log);
 // Promise.all
 // 전체 promise인 배열을 받고 새로운 promise를 반환한다.
 function pickAllFruits() {
-  return Promise.all([getApple(), getBanana()]).then(fruits =>
+  return Promise.all([getApple(), getBanana()]).then((fruits) =>
     fruits.join(' + ')
   );
 }
