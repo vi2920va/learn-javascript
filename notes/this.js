@@ -10,7 +10,6 @@ function talk() {
     console.log('YES');
   }
 }
-
 talk();
 
 // 3. 객체의 메서드로 호출
